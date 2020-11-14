@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSM System</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="loadtable()">
+    <br><br>
+    <h1 id="head">Grocery Shopping Management System</h1>
+    <div id="listdiv" >
+        <label for="deptSelect">Choose Category</label>
+        <br>
+        <br>
+    
+        <select onchange='loadtable()'' name='Departmentselect' id='deptSelect'>
+            <option value='all' selected>All</option>
+            <option value='Food'>Food Items</option>
+            <option value='Stationary'>Stationary</option>
+            <option value='Health'>Health</option>
+        </select>
+        <table id="tbl1">
+            
+        </table>
+        <BR></BR>
+        <form action="addnew.html">
+            <input id="deptSelect" type="submit" value="ADD NEW ITEMS">
+        </form>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
